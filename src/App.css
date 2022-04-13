@@ -1,38 +1,104 @@
-.App {
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+h1{
   text-align: center;
+  font-size:2.5rem;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2{
+  font-size: 1.75rem;
+  color:#640227;
+  margin:0;
+  width: 60%;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.cards{
+  width: fit-content;
+  height: fit-content;
+  margin: 0 auto;
+ 
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card{
+  height: 8.5rem;
+  width: 21.5rem;
+  text-align: left;
+  padding-top: 1.9rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+
 }
 
-.App-link {
-  color: #61dafb;
+.card:nth-child(1){
+  background-color: #9CB5BA;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:nth-child(2){
+  background-color: #D4E99C;
 }
+.card:nth-child(3){
+  background-color: #F8D9E8;
+}
+
+
+.flowerPhoto{
+  width: 40%;
+  align-self:flex-end;
+}
+
+.flowerInfo{
+width: 60%;
+height: 4.9rem;
+margin-left:1.5rem;
+margin-bottom: 1.813rem;
+}
+
+
+.temperature, .humidity{
+ 
+  background-repeat: no-repeat;
+  background-position: left;
+  padding-left: 1.25rem;
+  display: inline-block;
+  margin-top: 0.75rem;
+  border-radius: 8px;
+  background-color:rgba(57, 65, 7, 0.1);
+  width: 5.188rem;
+  height: 2rem;
+  padding-top: .5rem;
+  font-size: 0.875rem;
+
+  
+ 
+}
+
+.temperature{
+  background-image:url(./assets/temperature.svg);
+  margin-right: .5rem;
+}
+
+.humidity{
+  background-image: url(./assets/humidity.svg);
+}
+
+.count{
+  margin: 2rem auto;
+  width: fit-content;
+  color: green;
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* 
+.hiddenInfo{
+  overflow: hidden;
+  display: none;
+} */
