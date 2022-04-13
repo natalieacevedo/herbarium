@@ -1,5 +1,6 @@
 *, *:before, *:after {
   box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
 
@@ -35,6 +36,7 @@ h2{
   align-items: center;
   margin-bottom: 1rem;
   border-radius: 1rem;
+  cursor: pointer;
 
 }
 
@@ -97,8 +99,21 @@ margin-bottom: 1.813rem;
   text-align: center;
   font-size: 1.5rem;
 }
-/* 
-.hiddenInfo{
-  overflow: hidden;
-  display: none;
-} */
+
+.description{
+  width: 21.5rem;
+  padding: .5rem 1rem;
+  background-color: lightcyan;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  border-bottom-right-radius:1rem;
+  border-bottom-left-radius:1rem;
+
+
+}
+.squaredCorners{
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
+
+
