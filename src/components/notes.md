@@ -74,6 +74,8 @@ I then decided to always have a class with the styles that were not dependent on
 
 Unfortunately this approach did not work and because I had ran out of time I left the same background color for all description divs.
 
+There is known bug that I did not have the time to fix: When you click on the first or second card, and their description appears, the color of the following cards change because the description divs are at the same level of the card divs, so the wrong `:nth-children` selectors applies. The fix would likely involve putting the descriptions inside each card `div`.
+
 I also did not have time to do any of the bonus challenges.
 
-I didn't do many commits as it was a very short project.
+In addition I didn't do many commits as it was a very short project, also I wrote most of this notes file after the three hours were over.
